@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const team = ["Argentina", "Brazil", "Germany", "Poland", "Iran"];
+      //   const a = team[0];
+      //   const b = team[1];
+      //   const c = team[2];   //old way
+      //   const d = team[3];
+      //   const e = team[4];
+
+      //   document.write(e);
+
+      //   const [a, b, c, d, e] = team;
+
+      //   document.write(a);
+    </script>
+
+    <script>
+      //destructuring with function
+      function calc(a, b) {
+        const add = a + b + "<br>";
+        const sub = a - b + "<br>";
+        const Multi = a * b + "<br>";
+        const divide = a / b + "<br>";
+
+        return [add, sub, Multi, divide];
+      }
+      const [a, b, c, d] = calc(55, 10);
+
+      document.write(a);
+      document.write(b);
+      document.write(c);
+      document.write(d);
+    </script>
+  </body>
+</html>

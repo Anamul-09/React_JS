@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Destructuring Objects</title>
+  </head>
+  <body>
+    <div id="mydiv"></div>
+    <script>
+      const vehicle = {
+        name: "Car",
+        brand: "Ford",
+        price: 1000000,
+        color: "red",
+      };
+
+      //   function details(v) {   //old way
+      //     return (
+      //       "I have a " +
+      //       v.name +
+      //       " and it's brand " +
+      //       v.brand +
+      //       " and price is " +
+      //       v.price +
+      //       " and color is " +
+      //       v.color
+      //     );
+      //   }
+
+      function details({ name, color, price, brand }) {
+        //destructuring
+        return "I have a " +
+          name +
+          " and it's brand " +
+          brand +
+          " and price is " +
+          price +
+          " and color is " +
+          color
+        
+      }
+
+      let output = details(vehicle);
+
+      document.getElementById("mydiv").innerHTML = output;
+    </script>
+  </body>
+</html>

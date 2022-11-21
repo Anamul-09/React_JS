@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Car {  //class creation
+            constructor(name, color, price) {
+                this.brand = name;
+                this.color = color;
+                this.price = price;
+            };  //
+
+            present() {   //method creation
+                return "<br> I Have " + this.brand + " With color " + this.color;
+            }
+        }
+
+        class Model extends Car {
+            constructor(year, price) {
+                super("Ford", "Black")
+                this.year = year;
+                this.price = price;
+
+            }
+        }
+
+        // const carObj = new Car("fORD", "Red");
+        const ModelObj = new Model("2022", 2500000);
+
+        // console.log(carObj);
+        console.log(ModelObj);
+        document.write(ModelObj.present());
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function</title>
+  </head>
+
+  <body>
+    <script>
+      let Hello = function () {
+        //normal function
+        document.write("Hello world from normal function");
+        document.write("<br>");
+      };
+
+      Hello();
+
+      let world = () => {
+        document.write("Hello world with array function");
+        document.write("<br>");
+      };
+
+      world();
+
+      let Hello1 = (name) => {
+        document.write("Hello " + name + " with array function");
+        document.write("<br>");
+      };
+
+      Hello1("Anam");
+
+      let Hello2 = (name, address) => {
+        document.write(
+          "Hello " + name + " with array function and address is " + address
+        );
+        document.write("<br>");
+      };
+
+      Hello2("Anam", "Dhanmondy");
+    </script>
+  </body>
+</html>

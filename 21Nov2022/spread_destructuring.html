@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <script>   //spread operater 
+
+        const players1 =["Messi","Salah","Ronaldo","Mane","Pele","Meradona","Kaka","Karim"];
+        // const players2 =["Pele","Meradona","Kaka","Karim"];
+
+        const [one,two,Three,...others] =players1;
+
+       
+        document.write(one);
+        document.write("<br>");
+        document.write(two);
+        document.write("<br>");
+        document.write(others);
+
+    </script>
+
+
+
+
+</body>
+</html>

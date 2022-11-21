@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Car {  //class creation
+            constructor(name, color, price) {
+                this.brand = name;
+                this.color = color;
+                this.price = price;
+            };  //
+
+            present() {   //method creation
+                return "<br> I Have " + this.brand + " With color " + this.color;
+            }
+        }
+
+        const obj = new Car("Toyota", "Blue", 2500000); //Object creatin
+        document.write(obj.brand); //property output
+        document.write("<br>");
+        document.write(obj.color);
+        document.write("<br>");
+        document.write(obj.price);
+
+        document.write("<br>");
+        document.write(obj.present());  //Method calling
+
+    </script>
+</body>
+
+</html>
