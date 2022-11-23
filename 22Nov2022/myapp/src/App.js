@@ -5,6 +5,9 @@ import Header from './header';
 import Sidebar from './sidebar'
 import Home from './home';
 import Footer from './footer';
+// import About from './About';
+import { Outlet } from "react-router-dom";
+
 
 
 
@@ -17,7 +20,7 @@ function App() {
 <div className="container mt-5">
   <div className="row">
     <Sidebar/>
-    < Home />
+    < Outlet />
     
   </div>
 </div>
